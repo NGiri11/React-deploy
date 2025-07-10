@@ -11,6 +11,7 @@ function Hero(){
                 <button className="bg-teal-700 px-4 py-2 text-xl rounded-lg cursor-pointer hover:bg-white hover:text-teal-700 duration-300">Order Now</button>
             </div>
         </div>
+         <h1 className="text-white flex justify-evenly text-4xl underline italic font-semibold">Some of the Cuisines offered by us :</h1>
         </>
     )
 }
