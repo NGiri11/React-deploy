@@ -9,7 +9,8 @@ import Aboutus from "./pages/Aboutus";
 import Home from "./pages/Home";
 import Contactus from "./pages/Contactus";
 import Menu from "./pages/Menu";
-import {DataContext} from "./context/UserContext"
+import { DataContext } from "./context/UserContext";
+import MenuItem from "./pages/MenuItem";
 
 // function App() {
 //   var [count, setCount] = useState(0)
@@ -88,31 +89,37 @@ let menu = [
   {
     dishName: "Chole Bhature",
     imageUrl:
-      "https://media.istockphoto.com/id/873539518/photo/deep-fried-bread-spicy-chickpeas-curry-and-salad.jpg?s=1024x1024&w=is&k=20&c=09OHCgh8HINbB3Whd8wFaxzg930GEyRQWhizb5P4ET8=",
+      "https://static.vecteezy.com/system/resources/previews/015/933/726/large_2x/chole-bhature-is-a-north-indian-food-dish-a-combination-of-chana-masala-and-bhatura-or-puri-free-photo.jpg",
   },
   {
     dishName: "Biryani",
-    imageUrl: "https://example.com/images/biryani.jpg",
+    imageUrl:
+      "https://plus.unsplash.com/premium_photo-1694141252026-3df1de888a21?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     dishName: "Rajma Chawal",
-    imageUrl: "https://example.com/images/rajma-chawal.jpg",
+    imageUrl:
+      "https://www.secondrecipe.com/wp-content/uploads/2017/08/rajma-chawal-1.jpg",
   },
   {
     dishName: "Pani Puri",
-    imageUrl: "https://example.com/images/pani-puri.jpg",
+    imageUrl:
+      "https://tse1.mm.bing.net/th/id/OIP.ji3OLMosGNKNUT_0Nqo3WwHaFl?rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
     dishName: "Dhokla",
-    imageUrl: "https://example.com/images/dhokla.jpg",
+    imageUrl:
+      "https://tse2.mm.bing.net/th/id/OIP.W2G_SeUBPh8ez5JhMIpUnwHaGO?rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
     dishName: "Aloo Paratha",
-    imageUrl: "https://example.com/images/aloo-paratha.jpg",
+    imageUrl:
+      "https://pipingpotcurry.com/wp-content/uploads/2022/11/Aloo-Paratha-Best-Recipe-Piping-Pot-Curry.jpg",
   },
   {
     dishName: "Gulab Jamun",
-    imageUrl: "https://example.com/images/gulab-jamun.jpg",
+    imageUrl:
+      "https://recipes.net/wp-content/uploads/2023/05/gulab-jamun-recipe_9fb159dc2674f395436a64666227c988-768x768.jpeg",
   },
 ];
 function App() {
@@ -125,11 +132,10 @@ function App() {
 
   // };
 
-  const data = useContext(DataContext)
+  const data = useContext(DataContext);
 
   return (
     <>
-      
       {/* <button onClick={axiosResponse} className="bg-purple-400 p-5 rounded-lg text-white m-20">Get Data</button>
     //   {data.map(
     //     (element)=>{
